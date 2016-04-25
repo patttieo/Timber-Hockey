@@ -1,0 +1,75 @@
+{{#if banners.bottom}}
+<div class="banners" data-banner-location="bottom">
+    <div class="banner">
+        {{{limit banners.bottom 1}}}
+    </div>
+</div>
+{{/if}}
+
+<footer class="footer" role="contentinfo">
+
+    <div class="social-wrap">
+        <div class="row">
+           <div class="facebook social col-sm-12 col-md-3">
+            <a href="//www.facebook.com/timberhockey" target="_blank">
+                <h2 class="museo">facebook</h2>
+            </a>
+                
+            </div>
+            <div class="twitter social col-sm-12 col-md-3">
+                <a href="" target="_blank">
+                    <h2 class="museo">twitter</h2>
+                </a>
+            </div>
+            <div class="instagram social col-sm-12 col-md-3">
+                <a href="//instagram.com/timberhockey" target="_blank">
+                    <h2 class="museo">instagram</h2>
+                </a>
+            </div>
+            <div class="youtube social col-sm-12 col-md-3">
+                <a href="" target="_blank">
+                    <h2 class="museo">youtube</h2>
+                </a>
+            </div> 
+        </div>
+ 
+    </div>
+    <div class="container">
+        <row class="row">
+            <div class="col-sm-12 col-md-3">
+                <h3>Store Links</h3>
+                <ul class="footer-info-list">
+                    {{#each pages}}
+                    <li>
+                        <a href="{{url}}">{{name}}</a>
+                    </li>
+                    {{/each}}
+                    <li>
+                        <a href="{{urls.sitemap}}">{{lang 'sitemap.page_title'}}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <h3>Store Links</h3>
+                  <ul class="footer-info-list">
+                    {{#each categories}}
+                        <li>
+                            <a href="{{url}}">{{name}}</a>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                {{#if settings.show_newsletter_box}}
+                    {{> components/common/subscription-form}}
+                {{/if}}
+            </div>
+        </row>
+
+        {{#if theme_settings.show_powered_by}}
+            <div class="footer-copyright">
+                <p class="source-org copyright cf">&copy; 2016 Timber Hockey.</p>
+            </div>
+        {{/if}}
+    </div>
+</footer>

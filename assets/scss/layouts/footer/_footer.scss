@@ -1,0 +1,62 @@
+// =============================================================================
+// FOOTER (CSS)
+// =============================================================================
+
+
+// Layout and columns
+// -----------------------------------------------------------------------------
+//
+// 1. To enable the grid's display: inline-block; to work properly, we need to
+//    remove the white-space that it creates between columns with font-size: 0;
+// 2. Re-set the font-size that was reduced to 0 in point 1 for children.
+//
+// -----------------------------------------------------------------------------
+
+.footer {
+    background-color:#000;
+    background:url(../img/bg-footer.jpg) center;
+    background-size: cover;
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+}
+
+
+.social-wrap {
+    width:100%;
+    background-color:#151925;
+    text-align:center;
+    h2 { 
+        font-size:3rem; 
+        color:#fff; 
+        margin:0;
+        font-weight:300; 
+        text-transform:uppercase; 
+        padding:2rem 0;
+    }
+    a {
+        width:100%;
+        height: 100%;
+        display: block;
+        text-decoration: none;
+        &:hover {
+            background: #fff; 
+            h2 {
+             color:#151925;   
+            } 
+        }
+    }
+}
+
+// Content
+// -----------------------------------------------------------------------------
+
+
+.footer-copyright {
+    text-align: center;
+    color:#fff;
+}
+
+

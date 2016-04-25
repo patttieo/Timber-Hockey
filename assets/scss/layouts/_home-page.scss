@@ -1,0 +1,102 @@
+
+.home-banner {
+  background: url(../img/home-banner.jpg) no-repeat center center;
+  min-height: 100vh;  
+  background-size: cover;
+  background-attachment: fixed;
+
+  .banner-content {
+    color:#000; 
+    margin:0 10%; 
+    float:right;
+    width:70%; 
+  }
+  .home-logo {
+    margin:0 auto; 
+    text-align:center;
+    line-height: 1;
+    padding:10%;
+    .logo img { 
+      width:15rem; 
+    }   
+    h1 {
+      color:#fff;
+      font-size:7rem;
+      text-transform:uppercase;
+    }
+  }
+}
+
+.cat-section {
+  overflow: hidden;
+  .col-sm-12 {
+    margin:0;
+    padding:0;
+  }
+  .cats {
+    width:100%;
+    height:35em; 
+    float:left;
+    position:relative;
+    display: table;
+
+    .inner-content {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 1.2rem;
+      overflow: hidden;
+      border: 4px solid #fff;
+      opacity:0;
+      transition: all 200ms ease-out;
+    }
+    h2 {
+      font-size:3rem;
+      margin:0;
+      color:#eee;
+      display: inline-block;
+      padding:1rem 5rem;
+      border:1px solid #fff; 
+      text-transform: uppercase;     
+    }
+    &:hover {
+      span {
+        transform: scale(1);
+        opacity: 1;
+      }
+      h2 {
+        color:#151925;
+        background: #fff;
+      }
+    }
+  }
+  .hockey-gear {
+    background: url(../img/sticks.jpg) no-repeat center;
+    background-size: cover;       
+  }
+  .hockey-apparel {
+    background: url(../img/apparel.jpg) no-repeat center;
+    background-size: cover;       
+  } 
+}
+
+
+.whoweare {
+  background: url(../img/bg-about-section.jpg) no-repeat left;
+  background-size: cover;           
+  .content-section {
+    color:#fff;
+    padding:15rem 5rem;
+    h2 { 
+    font-size:7rem;
+    }
+    p {  font-size:1rem; }
+  }
+}
