@@ -6,16 +6,19 @@
 </div>
 {{/if}}
 <header class="header" role="banner">
-  <div class="row">
-    <div class="logo">
-        <img src="{{cdn '/assets/img/logo.svg'}}" alt="">
-        <span>Timber Hockey</span>
-    </div>
+  <div class="row no-margin">
+    <div class="col-md-12">
+        <div class="logo">
+            <a href="/">
+                <img src="{{cdn '/assets/img/logo.svg'}}" alt="">
+                <span>Timber Hockey</span>
+            </a>
+        </div>
 
 
-    <div class="navPages-container" id="menu" data-menu>
-        {{> components/common/navigation-menu}}
+        <div class="main-menu" id="menu" data-menu>
+            {{> components/common/navigation-menu}}
+        </div>
     </div>
   </div>
-
 </header>

@@ -16,11 +16,19 @@
     background-color:#000;
     background:url(../img/bg-footer.jpg) center;
     background-size: cover;
+    h3 {
+        font-size:2rem;
+        color:#fff;
+        margin-bottom: 0.4rem;
+    }
     ul {
         li {
             list-style: none;
+            a {
+                color:#fff;
+            }
         }
-    }
+    }       
 }
 
 
@@ -52,7 +60,6 @@
 
 // Content
 // -----------------------------------------------------------------------------
-
 
 .footer-copyright {
     text-align: center;

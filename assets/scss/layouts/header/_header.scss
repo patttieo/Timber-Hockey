@@ -13,24 +13,47 @@
 // -----------------------------------------------------------------------------
 
 .header {
-    padding:2rem 0 1rem;
+    padding:0 0 1rem;
     text-align:center;
-    background: #000;
+    background:none;
+    position: fixed;
     .logo {
+        a {
+            text-decoration: none;
+            opacity: 1;
+            transition: opacity 0.6s;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
         float:left;
         img {
             width:3rem;
         }
         span {
+            font-family:$heading;
             color:#fff;
+            font-size:2rem;
             display: block;
         }
     }
-    li {
-        a {
-            color:#fff;
-        }
+    .main-menu {
+        padding-top:3rem;   
+        float:left;
+        li {
+            transition: all 0.6s;
+            &:hover {
+                background:#fff;
+                a {
+                    color:#000;
+                }
+            }
+            a {
+                color:#fff;
+            }
+        }    
     }
+
 }
 
 

@@ -1,6 +1,6 @@
 
 .home-banner {
-  background: url(../img/home-banner.jpg) no-repeat center center;
+  background: url(../img/home-banner.jpg) no-repeat;
   min-height: 100vh;  
   background-size: cover;
   background-attachment: fixed;
@@ -16,6 +16,7 @@
     text-align:center;
     line-height: 1;
     padding:10%;
+    position: relative;
     .logo img { 
       width:15rem; 
     }   
@@ -89,14 +90,15 @@
 
 
 .whoweare {
+  overflow:hidden;
   background: url(../img/bg-about-section.jpg) no-repeat left;
   background-size: cover;           
   .content-section {
     color:#fff;
-    padding:15rem 0;
-    padding:0 5rem;
+    padding:15rem 10rem;
     h2 { 
-    font-size:7rem;
+    text-transform:uppercase;
+    font-size:5rem;
     }
     p {  font-size:1rem; }
   }
