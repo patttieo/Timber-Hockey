@@ -36,6 +36,10 @@
     width:100%;
     background-color:#151925;
     text-align:center;
+    .col-sm-12 {
+        padding:0;
+        margin:0;
+    }
     h2 { 
         font-size:3rem; 
         color:#fff; 
@@ -49,6 +53,7 @@
         height: 100%;
         display: block;
         text-decoration: none;
+        transition: all 0.6s;
         &:hover {
             background: #fff; 
             h2 {
