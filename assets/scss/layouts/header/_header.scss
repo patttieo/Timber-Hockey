@@ -17,7 +17,9 @@
     text-align:center;
     background:none;
     position: fixed;
+    z-index: 100;
     .logo {
+        padding-right:1.5rem;
         a {
             text-decoration: none;
             opacity: 1;
@@ -45,6 +47,7 @@
             &:hover {
                 background:#fff;
                 a {
+                    font-size:1.6rem;
                     color:#000;
                 }
             }
