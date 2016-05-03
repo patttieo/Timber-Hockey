@@ -11,16 +11,120 @@
 //    margin to compensate.
 //
 // -----------------------------------------------------------------------------
+.home {
+    .header {
+        padding:0 0 1rem;
+        text-align:center;
+        background:none;
+        position: fixed;
+        z-index: 100;
+        transition: all 0.6s;
+        width: 100%;
+        border-bottom:none;
+        .logo {
+            float:left;
+            position:relative;
+            padding:1.5rem 1.5rem 0 1rem;
+            text-align:center;
+            a {
+                text-decoration: none;
+                opacity: 1;
+                transition: opacity 0.6s;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+            img {
+                transition: all 0.6s;
+                top:0;
+                width:3rem;
+                position: relative;
+            }
+            span {
+                transition: all 0.6s;
+                position:relative;
+                top:0;
+                font-family:$heading;
+                color:#fff;
+                font-size:2rem;
+                display: block;
+            }
+        }
+        .main-menu {
+            padding-top:3rem;   
+            float:left;
+            transition: all 0.6s;
+            li {
+                transition: all 0.6s;
+                a {
+                    padding:0.6rem;
+                    font-size:1rem;
+                    color:#fff;
+                    font-weight: 200;
+                }
+                &:hover {
+                    background:#fff;
+                    a {
+                        opacity:0.8;
+                        color:#000;
 
+                    }
+                }
+
+
+            }    
+        }
+        &.header-background {
+            background: #fff;
+            .logo {
+                transition: all 0.6s;
+                img {
+                    position:absolute;
+                    top:-100rem;
+                    display: none;
+                }
+                span {
+                    font-size:1.7rem;
+                    color:#000; 
+                }
+            }
+            .main-menu {
+                padding-top:1.5rem;   
+                float:left;
+                li {
+                    transition: all 0.6s;
+                    a {
+                        color:#000;
+                    }
+                }    
+            }
+        }
+        &.header-nobackground {
+            background:none;
+        }
+    } 
+}
 .header {
     padding:0 0 1rem;
     text-align:center;
     background:none;
     position: fixed;
     z-index: 100;
+    transition: all 0.6s;
+    width: 100%;
+    border-bottom:none;
+    background: #fff;
     .logo {
-        padding-right:1.5rem;
-        a {
+        float:left;
+        position:relative;
+        padding:1.5rem 1.5rem 0 1rem;
+        text-align:center;
+        transition: all 0.6s;
+        img {
+            position:absolute;
+            top:-100rem;
+        }
+       a {
             text-decoration: none;
             opacity: 1;
             transition: opacity 0.6s;
@@ -28,35 +132,40 @@
                 opacity: 0.7;
             }
         }
-        float:left;
-        img {
-            width:3rem;
-        }
         span {
+            transition: all 0.6s;
+            position:relative;
+            top:0;
             font-family:$heading;
-            color:#fff;
-            font-size:2rem;
+            color:#000;
+            font-size:1.7rem;
             display: block;
         }
     }
     .main-menu {
-        padding-top:3rem;   
+        padding-top:1.5rem;   
         float:left;
+        transition: all 0.6s;
         li {
             transition: all 0.6s;
+            a {
+                padding:0.6rem;
+                font-size:1rem;
+                color:#000;
+                font-weight: 200;
+            }
             &:hover {
                 background:#fff;
                 a {
-                    font-size:1.6rem;
+                    opacity:0.8;
                     color:#000;
+
                 }
             }
-            a {
-                color:#fff;
-            }
+
+
         }    
     }
-
 }
 
 

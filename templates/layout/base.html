@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         {{{stylesheet '/assets/css/theme.css'}}}
         {{ getFontsCollection }}
+
         <script src="https://use.typekit.net/yer0yyh.js"></script>
         <script>try{Typekit.load({ });}catch(e){}</script>
         <script src="{{cdn '/assets/modernizr-custom.js'}}"></script>
@@ -22,8 +23,7 @@
         {{inject 'urls' urls}}
         {{{snippet 'htmlhead'}}}
     </head>
-    <body class="">
-    {{{ url }}}
+    <body class="{{ page.title }}">
         {{{snippet 'header'}}}
         <div class="icons-svg-sprite">{{> components/common/icons/icon-defs }}</div>
 
@@ -40,7 +40,6 @@
             // Exported in app.js
             window.stencilBootstrap("{{template_file}}", {{jsContext}}).load();
         </script>
-
         {{{footer.scripts}}}
         {{{snippet 'footer'}}}
     </body>

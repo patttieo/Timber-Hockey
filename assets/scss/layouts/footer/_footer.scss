@@ -11,27 +11,6 @@
 // 2. Re-set the font-size that was reduced to 0 in point 1 for children.
 //
 // -----------------------------------------------------------------------------
-
-.footer {
-    background-color:#000;
-    background:url(../img/bg-footer.jpg) center;
-    background-size: cover;
-    h3 {
-        font-size:2rem;
-        color:#fff;
-        margin-bottom: 0.4rem;
-    }
-    ul {
-        li {
-            list-style: none;
-            a {
-                color:#fff;
-            }
-        }
-    }       
-}
-
-
 .social-wrap {
     width:100%;
     background-color:#151925;
@@ -64,12 +43,53 @@
     }
 }
 
+.footer {
+    background-color:#000;
+    background:url(../img/bg-footer.jpg) center;
+    background-size: cover;
+    .container {
+        padding:1.5rem 7.5vw;
+
+    }
+    .row {
+        margin-bottom: 2rem;
+    }
+    .subscription {
+        input[type=email] {
+            width:100%;
+        }
+        input[type=submit] {
+            display: block;
+            float:left;
+        }
+    }
+    h3 {
+        font-size:2rem;
+        color:#fff;
+        text-transform:uppercase;
+        
+        margin: 1rem 0 0.4rem;
+    }
+    ul {
+        li {
+            list-style: none;
+            a {
+                color:#fff;
+            }
+        }
+    }       
+}
+
+
+
+
 // Content
 // -----------------------------------------------------------------------------
 
 .footer-copyright {
     text-align: center;
     color:#fff;
+    padding:1rem 0;
 }
 
 

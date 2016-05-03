@@ -21,6 +21,9 @@ import search from './theme/search';
 import sitemap from './theme/sitemap';
 import subscribe from './theme/subscribe';
 import wishlist from './theme/wishlist';
+import waypoints from './theme/waypoints'
+import header from './theme/header';
+
 
 const PageClasses = {
     mapping: {

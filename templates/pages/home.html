@@ -14,15 +14,18 @@ blog:
 {{#partial "hero"}}
 <div class="banner-wrapper">
     <div class="home-banner">
-        <div class="home-logo">
+    <div class="header-bg-change ha-waypoint" data-animate-down="header-background" data-animate-up="header-nobackground"></div>
+        <div class="home-logo "> 
             <div class="logo">
-            <img src="{{cdn '/assets/img/logo.svg'}}" alt="">
-                <h1>Timber Hockey</h1>
+            <img src="{{cdn '/assets/img/home-logo-2.svg'}}" alt="">
+                <h1 >Timber Hockey</h1>
             </div>
         </div>
+   
     </div>
 </div>
 <div class="cat-section clearfix"> 
+   
     <div class="row no-margin">
         <div class="col-sm-12 col-md-6">
             <div class="hockey-gear cats">
@@ -45,7 +48,7 @@ blog:
 <div class="whoweare">
     <div class="row no-margin">
         <div class="content-section">               
-            <h2>What we are</h2>
+            <h2>Who we are</h2>
             <p>Like you, we are sick of choosing between over-priced, over-hyped, hockey sticks that eat up your budget or low cost, low quality sticks that simply don't perform. We knew that there had to be a better way, so we created Timber Hockey to give hockey players a better option: a great stick at a fair price. Save Money, Play More</p>
         </div>
     </div>
@@ -60,32 +63,6 @@ blog:
     {{/each}}
 
 <div class="main full">
-    <div class="home-content-wrapper">
-
-        <div class="thestick cf">
-            <div class="stick-image ffloat">
-                <img src=""{{cdn '/assets/img/stick.jpg'}}"" alt="">     
-            </div>
-            <div class="stick-info ffloat">
-                <h2>Tomahawk <span>Black Out</span></h2>
-                <div class="specs">
-                    <ul>
-                        <li>435g</li>
-                        <li>100% advanced 3k carbon. Well balanced shaft and blade.</li>
-                        <li>Low-kick point for quick and powerful release.</li>
-                        <li>2 bridge blade technology for stiffness and durability.</li>
-                        <li>Comes in 85 and 100 flex.</li>
-                        <li>Patterns: PM9, P88, P91a, P92, P02, and P08</li>
-                    </ul>
-                </div>
-                <div class="button shop-now">
-                    <a href="/product/tomahawk/">
-                        <h3>Shop Now</h3>
-                    </a>
-                </div>
-            </div>
-        </div>  
-    </div>
     {{#if products.featured}}
         {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
     {{/if}}

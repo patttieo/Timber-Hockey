@@ -34,8 +34,8 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-3">
-                <h3>Store Links</h3>
+            <div class="col-sm-4">
+                <h3>Store</h3>
                 <ul class="footer-info-list">
                     {{#each pages}}
                     <li>
@@ -47,8 +47,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-12 col-md-3">
-                <h3>Store Links</h3>
+            <div class="col-sm-4">
+                <h3>Shop</h3>
                   <ul class="footer-info-list">
                     {{#each categories}}
                         <li>
@@ -57,10 +57,8 @@
                     {{/each}}
                 </ul>
             </div>
-            <div class="col-sm-12 col-md-3">
-                {{#if settings.show_newsletter_box}}
-                    {{> components/common/subscription-form}}
-                {{/if}}
+            <div class="col-sm-4">
+  
             </div>
         </div>
 
