@@ -10,8 +10,10 @@
         {{{stylesheet '/assets/css/theme.css'}}}
         {{ getFontsCollection }}
 
-        <script src="https://use.typekit.net/yer0yyh.js"></script>
+        <script src="//use.typekit.net/yer0yyh.js"></script>
         <script>try{Typekit.load({ });}catch(e){}</script>
+        <link href="//fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
         <script src="{{cdn '/assets/modernizr-custom.js'}}"></script>
 
         {{{head.scripts}}}
@@ -34,7 +36,7 @@
         {{> components/common/header }}
         {{> components/common/body }}
         {{> components/common/footer }}
-
+        
         <script src="{{cdn '/assets/js/bundle.js'}}"></script>
         <script>
             // Exported in app.js

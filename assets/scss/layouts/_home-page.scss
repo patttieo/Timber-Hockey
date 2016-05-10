@@ -16,15 +16,20 @@
     margin:0 auto; 
     text-align:center;
     line-height: 1;
-    top:14vw;
+    top:18vw;
     position: relative;
     .logo img { 
-      width:15rem; 
+      width:10rem; 
     }   
     h1 {
       color:#fff;
-      font-size:4rem;
+      font-size:5rem;
       text-transform:uppercase;
+    }
+    h2 {
+      color:#fff;
+      font-size:2rem;
+      text-transform: uppercase;
     }
   }
 }
