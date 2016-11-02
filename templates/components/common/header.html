@@ -5,20 +5,56 @@
     </div>
 </div>
 {{/if}}
-<header id="header" class="header" role="banner">
-  <div class="row no-margin">
-    <div class="col-md-12">
-        <div class="logo">
-            <a href="/">
-                <img src="{{cdn '/assets/img/logo.svg'}}" alt="">
-                <span>Timber Hockey</span>
-            </a>
-        </div>
+<div class="header-wrapper  hidden-sm hidden-xs">
+  <header id="header" class="header" role="banner">
+    <div class="row no-margin">
+      <div class="col-md-12">
+          <div class="logo">
+              <a href="/">
+                  <img src="{{cdn '/assets/img/logo.svg'}}" alt="">
+                  <span>Timber Hockey</span>
+              </a>
+          </div>
 
 
-        <div class="main-menu" id="menu" data-menu>
-            {{> components/common/navigation-menu}}
-        </div>
+          <div class="main-menu" id="menu" data-menu>
+              {{> components/common/navigation-menu}}
+          </div>
+      </div>
     </div>
-  </div>
-</header>
+  </header> 
+</div>
+
+<header class="m-header hidden-md hidden-lg" id="header" role="banner">
+    <div class="nav-controllers">
+      <div class="o-mnav-trigger hidden-md hidden-lg active" id="js-open-m-nav"><i class="material-icons menu-icon">menu</i></div>
+      <div class="c-mnav-trigger" id="js-close-m-nav"><i class="material-icons close-icon">close</i></div>
+    </div>
+    <div class="shopping-cart"><a href="/cart.php"><i class="material-icons shopping-cart-icon">shopping_cart</i></a></div>
+      <div class="logo-wrapper header-item">
+        <div class="logo-wrap">
+          <a href="/">
+           <img src="{{cdn '/assets/img/logo.svg'}} " alt="">
+            <strong>Timber Hockey</strong>
+          </a>
+        </div>
+      </div>
+      <div class="nav-links">
+        <section id="nav main-nav" id="top-menu">
+          <nav role="navigation" class="main-nav">
+          <ul class="main-nav right-nav header-item">
+              {{#each categories}}
+                  <li>
+                      <a href="{{url}}">{{name}}</a>
+                  </li>
+              {{/each}}  
+              {{#each pages}}
+                <li>
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+              {{/each}}
+          </ul>
+          </nav>
+          </section>
+      </div>
+</header> <!-- end header -->

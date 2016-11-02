@@ -1,9 +1,9 @@
 {
-  "name": "bigcommerce-storefront",
-  "description": "The new Bigcommerce Storefront",
-  "version": "1.1.0",
+  "name": "timber-hockey",
+  "description": "Timber Hockey",
+  "version": "1",
   "private": true,
-  "author": "Bigcommerce",
+  "author": "Pat Ortiz / Ographix.com",
   "license": "MIT",
   "devDependencies": {
     "@bigcommerce/citadel": "^2.11.5",

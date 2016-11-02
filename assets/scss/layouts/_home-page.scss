@@ -16,15 +16,20 @@
     margin:0 auto; 
     text-align:center;
     line-height: 1;
-    top:28vw;
+    top:18vw;
     position: relative;
     .logo img { 
-      width:20rem; 
+      width:10rem; 
     }   
     h1 {
       color:#fff;
-      font-size:6rem;
+      font-size:5rem;
       text-transform:uppercase;
+    }
+    h2 {
+      color:#fff;
+      font-size:2rem;
+      text-transform: uppercase;
     }
   }
 }
@@ -110,5 +115,12 @@
     margin-bottom:1rem;
     }
     p {  font-size:1rem; }
+  }
+}
+.main {
+  .page-heading {
+    padding:2rem 0;
+    font-size:5rem;
+    text-transform: uppercase;
   }
 }
